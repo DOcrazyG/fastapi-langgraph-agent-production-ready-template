@@ -44,6 +44,7 @@ cp .env.example .env.development
 | `LONG_TERM_MEMORY_COLLECTION_NAME` | `longterm_memory` | pgvector collection name |
 | `LONG_TERM_MEMORY_MODEL` | `gpt-5-nano` | LLM used by mem0 to extract memories |
 | `LONG_TERM_MEMORY_EMBEDDER_MODEL` | `text-embedding-3-small` | Embedding model for semantic search |
+| `LONG_TERM_MEMORY_EMBEDDER_DIMENSIONS` | `1536` | Dimensions produced by the embedding model |
 
 ---
 

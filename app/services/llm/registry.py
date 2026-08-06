@@ -29,12 +29,11 @@ class LLMRegistry:
 
     LLMS: List[Dict[str, Any]] = [
         {
-            "name": "gpt-5-mini",
+            "name": settings.DEFAULT_LLM_MODEL,
             "llm": ChatOpenAI(
-                model="gpt-5-mini",
+                model=settings.DEFAULT_LLM_MODEL,
                 api_key=_API_KEY,
                 model_kwargs=_TOKEN_LIMIT,
-                reasoning={"effort": "low"},
             ),
         },
         {

@@ -38,7 +38,10 @@ class MemoryService:
                     },
                     "embedder": {
                         "provider": "openai",
-                        "config": {"model": settings.LONG_TERM_MEMORY_EMBEDDER_MODEL},
+                        "config": {
+                            "model": settings.LONG_TERM_MEMORY_EMBEDDER_MODEL,
+                            "embedding_dims": settings.LONG_TERM_MEMORY_EMBEDDER_DIMENSIONS,
+                        },
                     },
                 }
             )
